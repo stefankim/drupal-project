@@ -26,7 +26,30 @@
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
-        "zaporylie/composer-drupal-optimizations": "^1.0"
+        "zaporylie/composer-drupal-optimizations": "^1.0",
+        "drupal/admin_toolbar": "*",
+        "drupal/advagg": "*",
+        "drupal/backup_migrate": "*",
+        "drupal/block_class": "*",
+        "drupal/context": "*",
+        "drupal/context_active_trail": "*",
+        "drupal/ctools": "*",
+        "drupal/eu_cookie_compliance": "*",
+        "drupal/google_analytics": "*",
+        "drupal/layout_builder_restrictions": "*",
+        "drupal/layout_builder_styles": "*",
+        "drupal/libraries": "*",
+        "drupal/link_class": "*",
+        "drupal/metatag": "*",
+        "drupal/pathauto": "*",
+        "drupal/redirect": "*",
+        "drupal/responsive_menu": "*",
+        "drupal/token": "*",
+        "drupal/twig_tweak": "*",
+        "drupal/video_embed_field": "*",
+        "drupal/webform": "*",
+        "drupal/xmlsitemap": "*",
+        "drupal/yoast_seo": "*"
     },
     "require-dev": {
         "webflo/drupal-core-require-dev": "^8.7.0"
@@ -65,11 +88,11 @@
             "drupal/core": "-p2"
         },
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "core": ["type:drupal-core"],
+            "libraries/{$name}": ["type:drupal-library"],
+            "modules/contrib/{$name}": ["type:drupal-module"],
+            "profiles/contrib/{$name}": ["type:drupal-profile"],
+            "themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
         },
         "drupal-scaffold": {
